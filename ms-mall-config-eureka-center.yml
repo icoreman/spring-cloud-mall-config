@@ -9,11 +9,6 @@ spring:
   profiles: dev #开发环境
   application:
     name: ms-mall-eureka-center
-  http:
-    encoding:
-      charset: UTF-8
-      force: true
-      enabled: true
 eureka: 
   instance: 
     hostname: eureka.mall.com #eureka服务端的实例名称,由于不能都一样，所以，要修改下 host 进行下映射
@@ -30,11 +25,7 @@ spring:
   profiles: test #测试环境,暂时不用，配成和dev一样的
   application:
     name: ms-mall-eureka-center
-  http:
-    encoding:
-      charset: UTF-8
-      force: true
-      enabled: true
+
 eureka: 
   instance: 
     hostname: eureka.mall.com #eureka服务端的实例名称,由于不能都一样，所以，要修改下 host 进行下映射
