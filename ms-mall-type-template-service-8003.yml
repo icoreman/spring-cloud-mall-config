@@ -29,8 +29,8 @@ spring:
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
   redis:
-    password:
     host: redis.mall.com    
+    port: 6379 
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
@@ -83,8 +83,8 @@ spring:
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
   redis:
-    password:
-    host: redis.mall.com    
+    host: redis.mall.com   
+    port: 6379 
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
