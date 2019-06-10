@@ -2,6 +2,7 @@ spring:
   profiles:
     active:
       - dev
+  
 ---
 server:
   port: 8001
@@ -16,6 +17,9 @@ spring:
   profiles: dev
   application: 
     name: ms-mall-brand-service
+  http:
+    encoding:
+      charset: utf-8
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -63,11 +67,14 @@ mybatis:
   type-aliases-package: com.xuxx.ms.mall.brand.entity       # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
-    
+  
 spring:
   profiles: test
   application: 
     name: ms-mall-brand-service
+  http:
+    encoding:
+      charset: utf-8
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -87,7 +94,7 @@ eureka:
   instance:
     instance-id: ms-mall-brand-8001
     prefer-ip-address: true     #访问路径可以显示IP地址  
-    
+
 swagger:
   enabled: true
   title: ms-mall-brand-API
