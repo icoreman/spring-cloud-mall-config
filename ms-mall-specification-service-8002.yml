@@ -28,7 +28,9 @@ spring:
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
-      
+  redis:
+    password:
+    host: redis.mall.com    
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
@@ -81,7 +83,9 @@ spring:
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
-      
+  redis:
+    password:
+    host: redis.mall.com   
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
