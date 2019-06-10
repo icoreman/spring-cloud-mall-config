@@ -19,7 +19,10 @@ spring:
     name: ms-mall-brand-service
   http:
     encoding:
-      charset: utf-8
+      charset: UTF-8
+      force: true
+      enabled: true
+      
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -74,7 +77,10 @@ spring:
     name: ms-mall-brand-service
   http:
     encoding:
-      charset: utf-8
+      charset: UTF-8
+      force: true
+      enabled: true
+
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包

@@ -11,7 +11,9 @@ spring:
     name: ms-mall-eureka-center
   http:
     encoding:
-      charset: utf-8
+      charset: UTF-8
+      force: true
+      enabled: true
 eureka: 
   instance: 
     hostname: eureka.mall.com #eureka服务端的实例名称,由于不能都一样，所以，要修改下 host 进行下映射
@@ -30,7 +32,9 @@ spring:
     name: ms-mall-eureka-center
   http:
     encoding:
-      charset: utf-8
+      charset: UTF-8
+      force: true
+      enabled: true
 eureka: 
   instance: 
     hostname: eureka.mall.com #eureka服务端的实例名称,由于不能都一样，所以，要修改下 host 进行下映射
