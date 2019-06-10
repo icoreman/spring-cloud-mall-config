@@ -1,0 +1,26 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+server:
+  port: 7001
+spring:
+  profiles: dev #开发环境
+  application:
+    name: ms-mall-eureka-center
+eureka:
+  client:
+    service-url:
+       defaultZone: http://eureka.mall.com:7001/eureka
+---
+server:
+  port: 7001
+spring:
+  profiles: test #测试环境,暂时不用，配成和dev一样的
+  application:
+    name: ms-mall-eureka-center
+eureka:
+  client:
+    service-url:
+       defaultZone: http://eureka.mall.com:7001/eureka
