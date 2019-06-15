@@ -13,7 +13,7 @@ spring:
     name: ms-mall-seller-manager-web
     
   rabbitmq:
-    host: localhost
+    host: 192.168.1.114
     port: 5672
     username: guest
     password: guest
@@ -33,7 +33,7 @@ management:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://eureka.mall.com:7001/eureka  
+      defaultZone: http://192.168.1.114:7001/eureka  
   instance:
     instance-id: ms-mall-seller-manager-web-9001
     prefer-ip-address: true     #访问路径可以显示IP地址  
