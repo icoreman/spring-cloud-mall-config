@@ -76,5 +76,10 @@ info:
 health:
   config:
     enabled: true
+# 其他配置
+file: 
+  server:
+  url: http://192.168.1.106
+
 ---
 # 暂时不启用 test 与 prod
